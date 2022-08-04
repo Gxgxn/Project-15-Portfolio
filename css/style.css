@@ -1,0 +1,235 @@
+:root {
+  --clr-primary-bg: #111111;
+  --clr-sec-bg: #181818;
+  --clr-cards-bg: #1e1e1e;
+  --clr-accent: #c91b28;
+  --clr-text-primary: #fff;
+  --ff-primary: "Montserrat", sans-serif;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  background-color: #111111;
+  font-family: var(--ff-primary);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  /* max-width: 90rem; */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-text-primary);
+}
+nav > img {
+  padding: 1em;
+  width: 100px;
+}
+.list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+.list-item {
+  padding: 1em;
+  cursor: pointer;
+}
+.hero-section {
+  color: var(--clr-text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* hero-image */
+.hero-image > img {
+  max-width: 600px;
+}
+.hero-text > * {
+  margin-bottom: 1rem;
+}
+.hero-accent {
+  font-size: 1.5em;
+}
+.accent-text {
+  color: var(--clr-accent);
+  font-weight: 700;
+}
+.hero-text > h1 {
+  font-size: 4em;
+}
+.hero-text-main {
+  font-size: 1.5rem;
+  width: 75%;
+  font-weight: 300;
+}
+.hero-btn {
+  padding: 1em 2em;
+  background-color: var(--clr-accent);
+  color: var(--clr-text-primary);
+  border: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+}
+.cards-container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.card {
+  flex-basis: 15%;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--clr-cards-bg);
+}
+.card > h3 {
+  font-size: 1.5rem;
+}
+.card-text {
+  font-size: 1.2rem;
+}
+.active {
+  background-color: var(--clr-accent);
+  color: #fff;
+}
+.bg-grey {
+  padding-block: 5em;
+  background: linear-gradient(90deg, #181818 50%, #0000 50%);
+}
+.small-card-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.small-card-container > * {
+  color: #fff;
+}
+.text-big {
+  margin-right: 10%;
+}
+.text-big > h1 {
+  font-size: 8rem;
+}
+.small-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 1em;
+  flex-basis: 40%;
+}
+.text-small {
+  background-color: var(--clr-cards-bg);
+  padding: 2em 3em;
+  flex-grow: 0;
+}
+.text-small > h1 {
+  font-size: 2rem;
+}
+.text-small > p {
+  font-size: 1rem;
+}
+.heading-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-block: 1rem;
+}
+.heading-text > h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.big-cards {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.big-img {
+  background-color: var(--clr-cards-bg);
+  /* height: 100%; */
+  /* flex-direction: row; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4em;
+}
+.big-img > img {
+  display: block;
+  max-width: 90%;
+  max-height: 250px;
+  object-fit: cover;
+}
+.big-card {
+  color: #fff;
+}
+.work-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-text-primary);
+  background-color: var(--clr-cards-bg);
+  margin-block: 3rem;
+  padding: 3em 3em;
+}
+.work-text {
+  width: 50%;
+}
+.work-text > h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.work-text > p {
+  font-size: 1.5rem;
+}
+.ftr-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+  margin-block: 4rem;
+}
+.ftr-nav > a {
+  text-decoration: none;
+  color: var(--clr-text-primary);
+}
+footer {
+  background-color: var(--clr-cards-bg);
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  width: 45%;
+}
+.footer-logo > img {
+  padding: 1em;
+  width: 100px;
+}
+.ftr-icons {
+  color: var(--clr-text-primary);
+  font-size: 2rem;
+  display: flex;
+  gap: 3rem;
+}
