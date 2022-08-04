@@ -157,23 +157,23 @@ nav > img {
   margin-bottom: 0.5em;
 }
 .big-cards {
-  width: 60%;
+  max-width: 60%;
   margin: 0 auto;
+  margin-block: 100px;
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 70px;
   justify-content: center;
 }
 
 .big-img {
   background-color: var(--clr-cards-bg);
-  /* height: 100%; */
-  /* flex-direction: row; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: 4em;
 }
 .big-img > img {
   display: block;
