@@ -6,7 +6,7 @@
 
 ## Project Goal :dart:
 
-To replicate a given portfolio. This webpage is not responsive yet.
+To replicate a given portfolio.
 
 ## Skills Gained
 

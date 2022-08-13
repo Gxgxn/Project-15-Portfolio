@@ -233,3 +233,29 @@ footer {
   display: flex;
   gap: 3rem;
 }
+@media only screen and (max-width: 900px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .list {
+    display: none;
+  }
+  .cards-container,
+  .small-card-container,
+  .work-wrapper {
+    flex-direction: column;
+  }
+  .big-cards {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .small-cards {
+    grid-template-columns: 1fr;
+  }
+  .work-text {
+    width: auto;
+  }
+  .hero-image > img {
+    max-width: 400px;
+  }
+}
