@@ -255,6 +255,16 @@ footer {
   .work-text {
     width: auto;
   }
+  .work-text > h1,
+  .hero-text > h1 {
+    font-size: 2rem;
+  }
+  .hero-text-main {
+    font-size: 1rem;
+  }
+  .hero-btn {
+    padding: 0.5em 0.8em;
+  }
   .hero-image > img {
     max-width: 400px;
   }
